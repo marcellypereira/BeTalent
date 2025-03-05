@@ -32,9 +32,7 @@ export const addEmployee = async (employee: Omit<Employee, 'id'>): Promise<Emplo
 
 export const deleteEmployee = async (id: string | number): Promise<boolean> => {
   try {
-    console.log(`Attempting to delete employee with ID: ${id}`);
     const response = await api.delete(`/employees/${id}`);
-    console.log('Delete response:', response);
     return response.status === 200 || response.status === 204;
   } catch (error) {
     console.error('Error deleting employee:', error);

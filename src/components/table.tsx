@@ -22,8 +22,6 @@ const Table: React.FC<TableProps> = ({ employees, loading, error }) => {
     return <div className={styles.empty}>Nenhum funcionário encontrado</div>;
   }
 
-  console.log('Rendering table with employees:', employees);
-
   return (
     <div className={styles.tableContainer}>
       <table className={styles.table}>

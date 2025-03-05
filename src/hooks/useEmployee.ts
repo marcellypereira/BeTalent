@@ -12,10 +12,8 @@ export const useEmployee = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        console.log('Tentando buscar funcionários...');
         setLoading(true);
         const data = await getEmployees();
-        console.log('Dados recebidos:', data);
         setEmployees(data);
         setFilteredEmployees(data);
         setError(null);
