@@ -4,7 +4,7 @@
 Este projeto foi desenvolvido como parte do teste prático para a vaga de Desenvolvedor(a) Front-end na BeTalent. Consiste em uma aplicação responsiva que exibe uma tabela de colaboradores com funcionalidade de pesquisa, consumindo dados de uma API simulada.
 
 
-O design foi disponibilizado no Figma, e você pode conferi-lo [aqui](https://www.figma.com/design/qpgEpcPm2SJPvSSJbJKZOf/Books-Management?node-id=0-1&node-type=canvas&t=saAso9SDBRs4Vz2h-0).
+O design foi disponibilizado no Figma, e você pode conferi-lo [aqui](https://www.figma.com/design/yw6th52zE9bubewc6ayTg5/Teste-T%C3%A9cnico-Frontend-BeTalent?node-id=5433-121&t=nP4H0C2fogY647pP-0).
 
 
 ## :computer: Tecnologias
