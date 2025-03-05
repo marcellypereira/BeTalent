@@ -1,0 +1,19 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+:root {
+  --primary-blue: #0500FF; 
+}
+
+body {
+  background-color: #F0F0F0;
+  line-height: 1.6;
+}
+
+
+

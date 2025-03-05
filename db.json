@@ -2,7 +2,7 @@
   "employees": [
     {
       "id": "1",
-      "name": "João",
+      "name": "Giovana L. Arruda",
       "job": "Back-end",
       "admission_date": "2019-12-02T00:00:00.000Z",
       "phone": "5551234567890",
@@ -10,7 +10,7 @@
     },
     {
       "id": "2",
-      "name": "Roberto",
+      "name": "Vanessa Machado",
       "job": "Front-end",
       "admission_date": "2020-03-12T00:00:00.000Z",
       "phone": "5550321654789",
@@ -18,7 +18,7 @@
     },
     {
       "id": "3",
-      "name": "Maria",
+      "name": "Juliana Borba",
       "job": "Front-end",
       "admission_date": "2020-03-15T00:00:00.000Z",
       "phone": "5557894561230",
@@ -26,7 +26,7 @@
     },
     {
       "id": "4",
-      "name": "Cleber",
+      "name": "Josiane Dias",
       "job": "Back-end",
       "admission_date": "2020-06-01T00:00:00.000Z",
       "phone": "5557410258963",
@@ -34,7 +34,7 @@
     },
     {
       "id": "5",
-      "name": "Giovana",
+      "name": "Reginaldo Felipe",
       "job": "Designer",
       "admission_date": "2020-06-20T00:00:00.000Z",
       "phone": "5553698520147",
@@ -42,7 +42,7 @@
     },
     {
       "id": "6",
-      "name": "Mario",
+      "name": "Grabriel D.",
       "job": "Front-end",
       "admission_date": "2020-10-01T00:00:00.000Z",
       "phone": "5551234567890",
@@ -50,7 +50,7 @@
     },
     {
       "id": "7",
-      "name": "Gabriel",
+      "name": "Silvio  de Carvalho",
       "job": "Back-end",
       "admission_date": "2021-01-01T00:00:00.000Z",
       "phone": "5551234567890",
@@ -58,7 +58,7 @@
     },
     {
       "id": "8",
-      "name": "Carla",
+      "name": "Ormar A. Amaral",
       "job": "Back-end",
       "admission_date": "2021-03-01T00:00:00.000Z",
       "phone": "5551234567890",
@@ -66,7 +66,7 @@
     },
     {
       "id": "9",
-      "name": "Pedro",
+      "name": "João Pedro Farias",
       "job": "Front-end",
       "admission_date": "2023-12-03T00:00:00.000Z",
       "phone": "5551234567890",
@@ -74,10 +74,10 @@
     },
     {
       "id": "10",
-      "name": "Fernanda",
+      "name": "Caroline Rocha da Silva",
       "job": "Front-end",
       "admission_date": "2021-05-01T00:00:00.000Z",
-      "phone": "559865445322",
+      "phone": "5598654453222",
       "image": "./src/assets/images/photo10.png"
     }
   ]
