@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# BeTalent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Sobre o projeto
+Este projeto foi desenvolvido como parte do teste prático para a vaga de Desenvolvedor(a) Front-end na BeTalent. Consiste em uma aplicação responsiva que exibe uma tabela de colaboradores com funcionalidade de pesquisa, consumindo dados de uma API simulada.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O design foi disponibilizado no Figma, e você pode conferi-lo [aqui](https://www.figma.com/design/qpgEpcPm2SJPvSSJbJKZOf/Books-Management?node-id=0-1&node-type=canvas&t=saAso9SDBRs4Vz2h-0).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## :computer: Tecnologias
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [React](https://legacy.reactjs.org/docs/create-a-new-react-app.html)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Json Server](https://www.npmjs.com/package/json-server)
+
+
+### 🎯 Funcionalidades
+
+- Visualização de tabela com dados de funcionários
+- Pesquisa dinâmica por nome, cargo e telefone
+- Formatação de datas e telefones no front-end
+- Layout responsivo (adaptado para desktop e mobile)
+- Tratamento de estados de carregamento e erro
+
+### ➕ Funcionalidade Adicional
+
+- Adição do novo funcionário diretamente no db.json
+- Atualização automática da tabela após o cadastro
+
+---
+### 🚀 Como Rodar o Projeto
+
+1. **Clone o repositório**:
+
+```bash
+git clone git@github.com:marcellypereira/BeTalent.git
+cd BeTalent
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Crie um arquivo .env na raiz do projeto e adicione**:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+VITE_API_URL=http://localhost:3000
 ```
+
+3. **Instale as dependências**:
+
+```bash
+yarn install
+```
+
+4. **Instale o Json Server globalmente (caso não tenha)**:
+
+```bash
+yarn install -g json-server
+```
+5. **Inicie o Json Server em um terminal separado**:
+
+```bash
+json-server --watch db.json --port 3000
+```
+6. **Inicie a aplicação**:
+
+```bash
+npm run dev
+```
+
+## :sparkles: Visualização Desktop
+
+![desktop](https://github.com/user-attachments/assets/2207e621-4cd1-4cf2-8623-bd6fdd9fae1e)
+
+## :sparkles: Visualização Mobile
+
+![mobile](https://github.com/user-attachments/assets/89f3617f-2ef8-4f2e-95b4-52fd25d6e8fb)
+
+<div align="center">Feito com 💜! </div>
