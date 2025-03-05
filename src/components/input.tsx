@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/input.module.css"; 
 
 interface InputProps {
   value: string;
@@ -7,12 +8,13 @@ interface InputProps {
 
 const Input: React.FC<InputProps> = ({ value, onChange }) => {
   return (
-    <div>
+    <div className={styles.inputContainer}>
       <input
         type="text"
         placeholder="Pesquisar"
         value={value}
         onChange={onChange}
+        className={styles.input} 
       />
     </div>
   );
