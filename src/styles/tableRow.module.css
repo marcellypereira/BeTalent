@@ -1,0 +1,187 @@
+.tableRow td {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.imageCell {
+  text-align: center;
+  width: 80px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.employeeImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.nameCell {
+  color: #000;
+  padding-left: 22px !important;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.jobCell {
+  color: #000;
+  padding-left: 38px !important;
+}
+
+.dateCell {
+  color: #000;
+  padding-left: 26px !important;
+}
+
+.phoneCell {
+  color: #000;
+  padding-left: 35px !important;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 8px;
+  display: none; 
+}
+
+.chevronIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.expandedRow {
+  display: none;
+}
+
+.expandedContent {
+  padding: 20px 15px 20px 15px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.expandedItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.expandedItem:last-child {
+  margin-bottom: 0;
+}
+
+.expandedLabel {
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+}
+
+.expandedValue {
+  color: #000;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 400;
+}
+
+.expandedItem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  border-bottom: 1px dotted #ddd;
+  z-index: 1;
+  width: 100%;
+}
+
+.expandedLabel, .expandedValue {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  padding: 0 5px;
+}
+
+.expandedLabel {
+  padding-left: 0;
+}
+
+.expandedValue {
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .jobCell, .dateCell, .phoneCell {
+    display: none;
+  }
+  
+  .tableRow {
+    background-color: white !important;
+  }
+  
+  .tableRow:nth-child(even) {
+    background-color: white !important;
+  }
+  
+  .tableRow td {
+    padding: 15px;
+  }
+
+  .imageCell {
+    width: 70px;
+    padding: 10px !important;
+  }
+  
+  .nameCell {
+    padding-right: 40px !important;
+    font-size: 16px;
+    position: relative;
+    font-weight: normal;
+  }
+  
+  .expandButton {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .expandedRow {
+    display: table-row;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+  .expandedRow.visible {
+    height: auto;
+  }
+  
+  .expandedRow:not(.visible) {
+    display: none;
+  }
+  
+  .expandedRow td {
+    padding: 0;
+  }
+  
+  .expandedContent {
+    padding: 20px 25px 30px 25px; 
+  }
+  .borderRemoved {
+    border-bottom: none !important;
+  }
+}
